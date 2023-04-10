@@ -1,0 +1,16 @@
+<div class="body">
+  <h1>
+    <b>User group: </b><span> {{ groupName.groupName }}</span>
+  </h1>
+  <div class="edit-body">
+    <input
+      type="text"
+      [
+      value]="newGroupName"
+      #newGroupNameInput
+      (input)="newGroupName = newGroupNameInput.value"
+      placeholder="Write new group name"
+    />
+    <button class="network" (click)="updateGroupName()">Edit</button>
+  </div>
+</div>
